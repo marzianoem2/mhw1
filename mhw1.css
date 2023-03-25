@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    font-family: 'Frank Ruhl Libre', serif;
+    background-color: #f5f5f7;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    background-color: rgba(44, 11, 16, 0.3);
+    color: white;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+nav span {
+    font-family: 'Oooh Baby', serif;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+header {
+    height: 500px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-image: url(imgint.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    width: 780px;
+    top: 50px;
+    margin: auto auto;
+}
+
+#flex-container p {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 20px;
+    color: #fcf7ed;
+    text-shadow: 1px 1px #66545e;
+    line-height: 20px;
+}
+
+#flex-container #sh1 {
+    font-family: 'Cedarville Cursive', serif;
+    font-size: 60px;
+    line-height: 50px;
+}
+
+#flex-container a {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: rgb(253, 246, 235);
+    color: #66545e;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#flex-container a:hover {
+    opacity: 0.8;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    margin: 0 0;
+}
+
+#dettagli p {
+    color: rgb(162, 162, 162);
+    font-style: italic;
+    margin: 0 0;
+}
+
+#update {
+    border-bottom: 1px solid grey;
+    padding-bottom: 0.5%;
+}
+
+#logo {
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    margin-top: -50px;
+    background-image: url(logo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+#dettagli {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+section {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+section article {
+    margin-bottom: 120px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 66.67%;
+}
+
+.elenco {
+    margin-right: 40px;
+    margin-left: -40px;
+    padding: 0 0;
+    width: 10%;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgba(102, 84, 94, 0.7);
+}
+
+.elenco p {
+    margin-top: 0;
+}
+
+#punti {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#punti a {
+    text-decoration: none;
+    color: #Aa6f73;
+    letter-spacing: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+#punti:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    color: #66545e;
+    border-radius: 3px;
+}
+
+article h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.articoli p {
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.articoli {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.articoli img {
+    width: 40%;
+    height: auto;
+    opacity: 1;
+    border-radius: 3px;
+}
+
+.articoli img:hover {
+	opacity: .5;
+}
+
+footer {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgba(102, 84, 94, 0.7);
+    font-size: 12px;
+    border-top: 1px solid #66545e;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+@media (max-width: 800px) {
+    #flex-container {
+        position: relative;
+        top: 200px;
+        left: auto;
+        right: auto;
+        width: 100%;
+    }
+
+    #flex-container p {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    #flex-container #sh1 {
+        font-size: 20px;
+        line-height: 21px;
+    }
+
+    #flex-container a { 
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    nav a {
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 6px;
+    }
+
+    nav span {
+        font-size: 20px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
